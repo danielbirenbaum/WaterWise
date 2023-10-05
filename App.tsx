@@ -5,13 +5,13 @@ export default function App() {
   console.log('App running');
 
   return (
-    //TODO: Criar um componente para o Login, não deixar no APP.js
+    //TODO: Criar um componente para o Login, não deixar no APP.tsx
     <View style={styles.container}>
       <Text style={styles.titleText}>Welcome to WATER WISE</Text>
 
       <View style={styles.input}>
-        <Button style={styles.buttonInput} title='Log in' ></Button>
-        <Button style={styles.buttonInput} title='Sign in'></Button>
+        <Button title='Log in' ></Button>
+        <Button title='Sign in'></Button>
       </View>
 
       <StatusBar style="auto" />
