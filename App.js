@@ -2,14 +2,15 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 
 export default function App() {
-  console.log('App executando');
+  console.log('App running');
 
   return (
+    //TODO: Criar um componente para o Login, não deixar no APP.js
     <View style={styles.container}>
       <Text style={styles.titleText}>Welcome to WATER WISE</Text>
 
       <View style={styles.input}>
-        <Button style={styles.buttonInput} title='Log in'></Button>
+        <Button style={styles.buttonInput} title='Log in' ></Button>
         <Button style={styles.buttonInput} title='Sign in'></Button>
       </View>
 
@@ -25,17 +26,23 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    display: 'inline',
   },
 
   input: {
+    flex: 1,
     borderWidth: 1,
     borderColor: '#437AF0',
     backgroundColor: '#1F3970',
     padding: 10,
     margin: 10,
     borderRadius: 20,
-    flexDirection : 'row',
+    flexDirection : 'column',
+    position: 'absolute',
+    bottom: 0,
+    width: 350,
+    height: 350,
+    alignContent: 'center',
+    justifyContent: 'center',
   },
 
   titleText: {
@@ -44,16 +51,8 @@ const styles = StyleSheet.create({
     color: '#1F3970',
   },
 
-  textInput: {
-    borderWidth: 1,
-    borderColor: '#437AF0',
-    padding: 10,
-    margin: 10,
-    borderRadius: 20,
-    
-  },
-
   buttonInput: {
+    flex: 1,
     borderWidth: 1,
     borderColor: '#437AF0',
     padding: 10,
