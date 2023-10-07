@@ -3,8 +3,17 @@ import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 
 const MainPage = () => {
   return (
-    <Text>Main Page</Text>
+    <Text style={styles.text}>Main Page</Text>
   )
 }
 
 export default MainPage
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 90,
+    textAlign: 'center',
+    margin: 10,
+  }
+
+})

@@ -1,8 +1,9 @@
 import React from 'react'
-
 import { StyleSheet, Text, TextInput, View, Button, Pressable } from 'react-native';
 
+
 export default function LoginScreen() {
+  
 
   return (
       <View style={styles.input}>
@@ -12,6 +13,7 @@ export default function LoginScreen() {
         <Pressable style={styles.buttonInput}>
           <Text style={styles.buttonText}>Sign up</Text>
         </Pressable>
+        
         <Pressable style={styles.buttonInput} onPress={() => console.log("Botão pressionado")}> 
           <Text style={styles.buttonText}>Continue without an account</Text>
         </Pressable>
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
       flex: 1,
       borderWidth: 1,
       borderColor: '#437AF0',
-      backgroundColor: '#0A3E7D',
+      backgroundColor: '#8CB6EC',
       padding: 10,
       margin: 10,
       borderRadius: 20,
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
     buttonInput: {
       flex: 1,
       borderWidth: 1,
-      borderColor: '#437AF0',
+      borderColor: '#253F76',
       padding: 10,
       margin: 10,
       borderRadius: 30,
@@ -50,12 +52,12 @@ const styles = StyleSheet.create({
 
     buttonText: {
       textAlign: 'center',
-      color: '#fff',
+      color: '#253F76',
       fontSize: 20,
       fontWeight: 'bold',
     },
 
     buttonHoverIn: {
-      backgroundColor: '#437AF0',
+      backgroundColor: '#fff',
     }
   });
