@@ -1,63 +1,52 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button, Image } from 'react-native';
+import LoginScreen from './screens/LoginScreen';
 
 export default function App() {
   console.log('App running');
+  const logoPath = "./assets/Logo.png";
 
   return (
-    //TODO: Criar um componente para o Login, não deixar no APP.tsx
-    <View style={styles.container}>
-      <Text style={styles.titleText}>Welcome to WATER WISE</Text>
-
-      <View style={styles.input}>
-        <Button title='Log in' ></Button>
-        <Button title='Sign in'></Button>
+    <View style={styles.main}>
+      {
+        //TODO: Remover o título e a Logo quando mudar de screen
+      }
+       
+      <Text style={styles.titleText}>Water Wise</Text>
+      <View style={{flex: 3}}>
+        <Image source={require(logoPath)} style={styles.logo}/>
       </View>
+
+
+      <LoginScreen></LoginScreen>
 
       <StatusBar style="auto" />
     </View>
-
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    main: {
+      flex: 1,
+      backgroundColor: '#1F3970',
+      alignItems: 'center',
+      height: '100%',
+    },
+    
+    titleText: {
+      flex: 1,
+      fontSize: 50,
+      textAlign: 'center',
+      color: '#fff',
+      marginTop: 45,
+    },
 
-  input: {
-    flex: 1,
-    borderWidth: 1,
-    borderColor: '#437AF0',
-    backgroundColor: '#1F3970',
-    padding: 10,
-    margin: 10,
-    borderRadius: 20,
-    flexDirection : 'column',
-    position: 'absolute',
-    bottom: 0,
-    width: 350,
-    height: 350,
-    alignContent: 'center',
-    justifyContent: 'center',
-  },
-
-  titleText: {
-    fontSize: 50,
-    textAlign: 'center',
-    color: '#1F3970',
-  },
-
-  buttonInput: {
-    flex: 1,
-    borderWidth: 1,
-    borderColor: '#437AF0',
-    padding: 10,
-    margin: 10,
-    borderRadius: 20,
-  }
+    logo: {
+      flex: 1,
+      marginBottom: 345,
+      resizeMode: 'contain',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
 });
