@@ -1,36 +1,38 @@
 import { StatusBar } from 'expo-status-bar';
-import React,{useState ,  createContext ,  useContext} from 'react';
+import React,{useState ,  createContext , useContext} from 'react';
 import { StyleSheet, Text, TextInput, View, Button, Image, SafeAreaView } from 'react-native';
 import LoginScreen from './screens/LoginScreen';
 import MainPage from './screens/MainScreen';
 
 export default function App() {
   console.log('App running');
-  const logoPath = "./assets/LogoSemFundo.png";
-  const [logado,setlogado] = useState(false)
-  const [screenIndex, setScreenIndex] = useState(0)
-
+  const logoPath = "./assets/Logo.png";
+  const [screenIndex , setScreenIndex] = useState(1);
 
 
   return (
+    
+    <>
     <View style={styles.main}>
-    {logado? 
-    <MainPage></MainPage> 
-    :
+    {screenIndex===0? 
     <View style={styles.main}>
-    {
-      //TODO: Remover o título e a Logo quando mudar de screen
-    } 
+    
     <Text style={styles.titleText}>Water Wise</Text>
     <View style={{flex: 10}}>
       <Image source={require(logoPath)} style={styles.logo}/>
     </View>
     <LoginScreen></LoginScreen>
-    
+  
   </View> 
+    : screenIndex ===1?
+    <MainPage></MainPage> 
+    :
+    <View></View>
     }
     </View>
     
+    <StatusBar style="auto" />
+  </>
   
   );
 }

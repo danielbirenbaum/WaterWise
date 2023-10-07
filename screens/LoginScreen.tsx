@@ -1,11 +1,10 @@
-import React from 'react'
 import { StyleSheet, Text, TextInput, View, Button, Pressable } from 'react-native';
+import React,{useState ,  createContext , useContext} from 'react';
 
 
 export default function LoginScreen() {
-  
-
   return (
+    
       <View style={styles.input}>
         <Pressable style={styles.buttonInput}>
           <Text style={styles.buttonText}>Log in</Text>
@@ -14,7 +13,7 @@ export default function LoginScreen() {
           <Text style={styles.buttonText}>Sign up</Text>
         </Pressable>
         
-        <Pressable style={styles.buttonInput} onPress={() => console.log("Botão pressionado")}> 
+        <Pressable style={styles.buttonInput} onPress={() => {}}> 
           <Text style={styles.buttonText}>Continue without an account</Text>
         </Pressable>
       </View>

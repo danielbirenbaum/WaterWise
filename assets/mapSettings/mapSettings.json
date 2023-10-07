@@ -1,0 +1,38 @@
+[
+    {
+      "featureType": "landscape.natural.terrain",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#ffeb3b"
+        }
+      ]
+    },
+    {
+      "featureType": "landscape.natural.terrain",
+      "elementType": "geometry.stroke",
+      "stylers": [
+        {
+          "color": "#ffeb3b"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#004cff"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "weight": 4
+        }
+      ]
+    }
+  ]
