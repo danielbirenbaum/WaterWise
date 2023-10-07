@@ -1,25 +1,35 @@
 import React from 'react'
-import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
+import { StyleSheet,  TextInput} from 'react-native';
 import MapView from 'react-native-maps';
 import mapSettings from '../assets/mapSettings/mapSettings.json'
-import InformationBox from './InformationBox';
+import {Colors} from 'react-native-ui-lib';
+import { TextField, Text, Button , View} from 'react-native-ui-lib';
+
+Colors.loadColors({
+  blue: '#80B3F4',
+  darker_blue: '#253F76',
+  grey: '#6F6C6B' , 
+  bege : '#FAEBD7'
+
+});
+
 
 const MainPage = () => {
   return (
     <>
+    
       <Text>Aqui vem a bar de cima</Text>
       <View style={styles.mainMap}>
           <MapView style={styles.mapView} customMapStyle={mapSettings}/>
       </View>
       <View style={{flexDirection: 'row', flex: 1}}>
-        <InformationBox name={'ph'} label={'7.5'} ></InformationBox>
-        <InformationBox name={'Temperature'} label={'30ºC'}></InformationBox>
       </View>
       <View style={styles.informacao2}>
-        <Text>Informações 2</Text>
+        <View style={{}}><Text>Informações 2</Text></View>
       </View>
 
       <View style={styles.informacao2}>
+
         <Text>Informações 3</Text>
       </View>
     </>
@@ -60,10 +70,14 @@ const styles = StyleSheet.create({
 
   informacao2: {
     flex: 1,
-    backgroundColor: '#80B3F4',
+    backgroundColor: Colors.darker_blue,
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
+    width:'80%',
+    borderRadius: 30,
+    marginBottom:10,
+
   },
 
   
