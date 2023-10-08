@@ -3,6 +3,8 @@ import { StyleSheet, Text, TextInput, View, Button, Pressable, Image, SafeAreaVi
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser'
 import { faCircleUser}  from '@fortawesome/free-solid-svg-icons/faCircleUser'
+import { NavBarScreen } from './NavBarScreen';
+import { useNavigation } from '@react-navigation/native';
 
 
 

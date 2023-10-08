@@ -1,6 +1,6 @@
 # Water Wise
 
-### Members of WounderWeb II: 
+### Member of Vaquitas Vigilantes: 
 * Carlos Frederico
 * João Vitor
 * Isabella 

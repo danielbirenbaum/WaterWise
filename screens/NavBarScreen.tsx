@@ -10,6 +10,7 @@ import { faMagnifyingGlass}  from '@fortawesome/free-solid-svg-icons/faMagnifyin
 import { faBars}  from '@fortawesome/free-solid-svg-icons/faBars'
 import {faLocationPin} from '@fortawesome/free-solid-svg-icons/faLocationPin'
 import {faQuestion} from '@fortawesome/free-solid-svg-icons/faQuestion';
+import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus';
 import MainPage from '../screens/MainScreen';
 import AccountScreen from '../screens/AccountScreen';
 import SearchScreen from './SearchScreen';
@@ -37,6 +38,15 @@ export const NavBarScreen = () => {
           ),
         }}/>
         <Tab.Screen name="Location" component={LocationScreen} options={{
+          headerStyle: {backgroundColor: '#FAEBD7'},
+          headerTitle: () => (
+            <>
+            <View style={{flexDirection: 'row', padding: 10, justifyContent: 'center'}}>
+              <FontAwesomeIcon icon={faPlus} color='#253F76' size={35}/>
+              <Text style={{ marginLeft: 20, fontSize: 25, textAlign: 'center'}}>Location</Text>
+            </View>
+            </>
+          ),
           tabBarIcon: () => (
             <FontAwesomeIcon icon={faBars} color='#FAEBD7'/>
           ),
@@ -47,7 +57,6 @@ export const NavBarScreen = () => {
             <>
             <View style={{flexDirection: 'row', padding: 10, justifyContent: 'center'}}>
               <FontAwesomeIcon icon={faQuestion} color='#253F76' size={35}/>
-              <Text style={{ marginLeft: 20, fontSize: 25, textAlign: 'center'}}>FAQ</Text>
             </View>
             </>
           ),

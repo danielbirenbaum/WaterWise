@@ -29,16 +29,11 @@ const MainPage = () => {
             <View style={{width:'30%', height:'75%' ,backgroundColor:Colors.bege , marginStart:20 ,marginTop:10, borderRadius:20, alignContent:'center'}}><Text style={{fontSize: 32 , marginStart:17}}>18°C</Text></View>
           </View>
 
-          <View style={{ height:'22%' , width:'80%' ,  borderRadius:20 ,marginTop:10,flexDirection:'row'}}>
-            <View style={{ backgroundColor: Colors.darker_blue , width:'47%', marginEnd:10 , borderRadius:20 , flexDirection:'row'}}>
-              <View style={{width:'30%' ,height:'60%', marginTop:20 , marginStart:10 , justifyContent: 'center' , alignContent:'center'}}><Text style={{color:Colors.white,fontSize:20 , marginStart:7 ,marginBottom:5}}>pH</Text></View>
-              <View style={{width:'45%' ,height:'60%' , backgroundColor: Colors.bege , marginTop:20 , marginStart:10 , justifyContent: 'center' , alignContent:'center',  borderRadius:20}}><Text style={{color:Colors.dark , marginStart:15 ,marginBottom:3, fontSize:30}}>6.5</Text></View>
-            </View>
-            <View style={{ backgroundColor: Colors.darker_blue , width:'47%' ,marginStart:10, borderRadius:20 ,flexDirection:'row' }}>
-              <View style={{width:'30%' ,height:'60%', marginTop:20 , marginStart:10 , justifyContent: 'center' , alignContent:'center'}}><Text style={{color:Colors.white,fontSize:20 , marginStart:7 ,marginBottom:5}}>DO</Text></View>
-              <View style={{width:'45%' ,height:'60%' , backgroundColor: Colors.bege , marginTop:20 , marginStart:10 , justifyContent: 'center' , alignContent:'center',  borderRadius:20}}><Text style={{color:Colors.dark , marginStart:25 ,marginBottom:3, fontSize:30}}>X</Text></View>
-            </View>
+          <View style={{borderWidth:1 , borderColor:Colors.dark , height:'20%' , width:'80%' ,  borderRadius:20 ,marginTop:5 , flexDirection:'row', backgroundColor:Colors.darker_blue}}>
+            <View style={{width:'60%' ,borderRadius:20,  marginTop:10}}><Text style={{fontSize: 25 , color:Colors.white , marginTop:15 , marginStart:35}}>Turbinity</Text></View>
+            <View style={{width:'30%', height:'70%' ,backgroundColor:Colors.bege , marginStart:15 ,marginTop:10, borderRadius:20, alignContent:'center'}}><Text style={{fontSize: 32 , marginStart:30 , marginTop:7}}>110</Text></View>
           </View>
+          
 
           <View style={{ height:'28%' , width:'80%' ,  borderRadius:20 ,marginTop:10 , flexDirection:'column' , backgroundColor:Colors.darker_blue }}>
             <View style={{  flexDirection:'row',  justifyContent:'center', marginTop:5}}>
@@ -54,9 +49,9 @@ const MainPage = () => {
             </View>
           </View>
 
-          <View style={{borderWidth:5 , borderColor:Colors.dark , height:'20%' , width:'80%' ,  borderRadius:20 ,marginTop:10}}>
-            <View></View>
-            <View></View>
+          <View style={{ height:'20%' , width:'80%' ,  borderRadius:20 ,marginTop:10 , flexDirection:'row' , backgroundColor:Colors.darker_blue}}>
+            <View style={{ width:'60%' , borderRadius:20}}><Text style={{color:Colors.white ,  fontSize:25 , marginStart:30 , marginTop:10}}>Endangered Species</Text></View>
+            <View style={{ width:'30%' , height:'65%' , marginTop:15 , marginStart:15 , borderRadius:20 , backgroundColor:Colors.bege}}><Text style={{fontSize:30 , marginStart:40 , marginTop:5}}>X</Text></View>
           </View>
       </View>
     </>
@@ -67,8 +62,6 @@ export default MainPage
 
 const styles = StyleSheet.create({
   wholeView:{
-    borderColor:Colors.white , 
-    borderWidth: 5,
     marginTop:10,
     flexDirection:'column',
     height:'60%',

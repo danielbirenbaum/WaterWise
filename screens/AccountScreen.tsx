@@ -1,9 +1,44 @@
 import React from 'react'
-import { Text } from 'react-native'
+import {Colors} from 'react-native-ui-lib';
+import { TextField, Text, Button , View} from 'react-native-ui-lib';
 
 function AccountScreen() {
   return (
-    <Text>AccountScreen</Text>
+    <View style={{flexDirection:'column'  , height:'100%' , width:'100%'}}>
+
+      <View style={{flexDirection:'row'}}>
+        <View></View>
+        <View></View>
+      </View>
+
+      <View style={{flexDirection:'column'}}>
+        <View></View>
+        <View></View>
+      </View>
+
+      <View style={{flexDirection:'row'}}>
+        <View></View>
+        <View></View>
+      </View>
+
+      <View style={{flexDirection:'row'}}>
+        <View></View>
+        <View></View>
+      </View>
+
+      <View style={{flexDirection:'column'}}>
+        <View style={{flexDirection:'row'}}>
+          <View></View>
+          <View></View>
+        </View>
+        <View style={{flexDirection:'column'}}>
+          <View></View>
+          <View></View>
+          <View></View>
+        </View>
+      </View>
+      
+    </View>
   )
 }
 

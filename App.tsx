@@ -11,6 +11,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faMap } from '@fortawesome/free-solid-svg-icons/faMap'
 import { faCircleUser}  from '@fortawesome/free-solid-svg-icons/faCircleUser'
 import { NavBarScreen } from './screens/NavBarScreen';
+import Authentication from './Components/Authentication' 
+
 
 
 
@@ -25,13 +27,10 @@ export default function App() {
   return (
     <NavigationContainer>
       {isSignedIn ? 
-      
-      <LoginScreen></LoginScreen> 
-      
+
+        <Authentication></Authentication>
       : 
-      <>
-      <NavBarScreen></NavBarScreen>
-      </>
+        <NavBarScreen></NavBarScreen>
       
       }
 

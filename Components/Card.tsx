@@ -1,14 +1,13 @@
 import React from 'react'
-import {Text, StyleSheet, Image, View} from 'react-native'
+import {Text, StyleSheet, Image, View, ImageBackground} from 'react-native'
+import {Colors} from 'react-native-ui-lib';
 
 
 
-function Card({source, title , label}) {
+function Card({source, label}) {
   return (
     <View style={styles.card}>
-        <Text style={styles.title}>{title}</Text>
-        <Image style={styles.image} source={source} />
-        <Text style={styles.label}>{label}</Text>
+        <ImageBackground imageStyle={{borderRadius:20 }} source={source} style={styles.image}><Text style={{color: Colors.white , marginTop:'45%' , alignSelf:'center' , fontSize:20, fontWeight: 'bold'}}>{label}</Text></ImageBackground>
     </View>
   )
 }
@@ -17,7 +16,6 @@ export default Card
 
 const styles = StyleSheet.create({
     card: {
-        backgroundColor: 'yellow',
         flex: 1,
     },
     title: {
@@ -27,8 +25,10 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     image: {
-        resizeMode: 'contain',
-        flex: 1
+        resizeMode: 'cover',
+        width:300 ,  
+        flex: 0.8,
+        alignSelf:'center',
     },
 
     label: {
