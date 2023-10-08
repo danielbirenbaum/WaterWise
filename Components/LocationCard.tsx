@@ -6,7 +6,7 @@ import {Text, StyleSheet, Image, View, ImageBackground} from 'react-native'
 import {Typography,Colors, Gradient, GradientTypes, Shadows} from 'react-native-ui-lib';
 
 
-function LocationCard({source, name, icon , label, id}) {
+function LocationCard({source, name, icon , label, key}) {
   
   return (
     <View style={styles.card}>

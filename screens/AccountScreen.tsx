@@ -61,11 +61,11 @@ function AccountScreen() {
           <View style={{width:'30%'}}>  
             <FontAwesomeIcon icon={faChevronUp} size={40} style={{color:Colors.white , marginTop:'20%' , marginStart:'40%'}}/>
           </View>
-          <View style={{width:'70%',}}><Text style={{color:Colors.white  , fontSize:24 , marginTop:'8%' , marginStart:'10%'}}>Liked</Text></View>
+          <View style={{width:'70%',}}><Text style={{color:Colors.white  , fontSize:30 , marginTop:'8%' , marginStart:'10%'}}>Liked</Text></View>
         </View>
           <LikeCard id={0} source={require("../assets/AccountScreenImages/pessoas.jpg")} name={"Comunity Service ..."} icon={true}></LikeCard>
-          <LikeCard id={1} source={require("../assets/AccountScreenImages/conchas.jpg")} name={"Vaquitas: Earth's ..."} icon={true}></LikeCard>
-          <LikeCard id={2} source={require("../assets/AccountScreenImages/dauphin.jpg")} name={"Why you should..."} icon={true}></LikeCard>
+          <LikeCard id={1} source={require("../assets/AccountScreenImages/conchas.jpg")} name={"Why you should..."} icon={true}></LikeCard>
+          <LikeCard id={2} source={require("../assets/AccountScreenImages/dauphin.jpg")} name={"Vaquitas: Earth's ..."} icon={true}></LikeCard>
       </View>
       
     </View>

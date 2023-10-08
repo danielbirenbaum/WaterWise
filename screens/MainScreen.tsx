@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet,  TextInput} from 'react-native';
-import MapView from 'react-native-maps';
+import MapView, {Marker} from 'react-native-maps';
 import mapSettings from '../assets/mapSettings/mapSettings.json'
 import {Colors} from 'react-native-ui-lib';
 import { TextField, Text, Button , View} from 'react-native-ui-lib';
@@ -20,17 +20,29 @@ const MainPage = () => {
   return (
     <>
       <View style={styles.mainMap}>
-          <MapView style={styles.mapView} customMapStyle={mapSettings}/>
+          <MapView 
+          style={styles.mapView} 
+          customMapStyle={mapSettings} 
+          initialRegion={{
+            latitude: -22.9,
+            longitude: -43,
+            latitudeDelta: 10,
+            longitudeDelta: 10,
+          }}/>
+          <Marker coordinate={{
+            latitude:  -22.9,
+            longitude: -43,
+       }} pinColor='red'/>
       </View>
 
       <View style={styles.wholeView}>
           <View style={{borderWidth:1 , borderColor:Colors.dark , height:'15%' , width:'80%' ,  borderRadius:20 ,marginTop:5 , flexDirection:'row', backgroundColor:Colors.darker_blue}}>
             <View style={{width:'60%' ,borderRadius:20}}><Text style={{fontSize: 20 , color:Colors.white , marginTop:15 , marginStart:20}}>Temperature</Text></View>
-            <View style={{width:'30%', height:'75%' ,backgroundColor:Colors.bege , marginStart:20 ,marginTop:10, borderRadius:20, alignContent:'center'}}><Text style={{fontSize: 32 , marginStart:17}}>18°C</Text></View>
+            <View style={{width:'30%', height:'75%' ,backgroundColor:Colors.bege , marginStart:20 ,marginTop:10, borderRadius:20, alignContent:'center'}}><Text style={{fontSize: 32 , marginStart:17}}>24°C</Text></View>
           </View>
 
           <View style={{borderWidth:1 , borderColor:Colors.dark , height:'20%' , width:'80%' ,  borderRadius:20 ,marginTop:5 , flexDirection:'row', backgroundColor:Colors.darker_blue}}>
-            <View style={{width:'60%' ,borderRadius:20,  marginTop:10}}><Text style={{fontSize: 25 , color:Colors.white , marginTop:15 , marginStart:35}}>Turbinity</Text></View>
+            <View style={{width:'60%' ,borderRadius:20,  marginTop:10}}><Text style={{fontSize: 25 , color:Colors.white , marginTop:15 , marginStart:35}}>Turbidity</Text></View>
             <View style={{width:'30%', height:'70%' ,backgroundColor:Colors.bege , marginStart:15 ,marginTop:10, borderRadius:20, alignContent:'center'}}><Text style={{fontSize: 32 , marginStart:30 , marginTop:7}}>110</Text></View>
           </View>
           
@@ -51,7 +63,7 @@ const MainPage = () => {
 
           <View style={{ height:'20%' , width:'80%' ,  borderRadius:20 ,marginTop:10 , flexDirection:'row' , backgroundColor:Colors.darker_blue}}>
             <View style={{ width:'60%' , borderRadius:20}}><Text style={{color:Colors.white ,  fontSize:25 , marginStart:30 , marginTop:10}}>Endangered Species</Text></View>
-            <View style={{ width:'30%' , height:'65%' , marginTop:15 , marginStart:15 , borderRadius:20 , backgroundColor:Colors.bege}}><Text style={{fontSize:30 , marginStart:40 , marginTop:5}}>X</Text></View>
+            <View style={{ width:'30%' , height:'65%' , marginTop:15 , marginStart:15 , borderRadius:20 , backgroundColor:Colors.bege}}><Text style={{fontSize:30 , marginStart:40 , marginTop:5}}>3</Text></View>
           </View>
       </View>
     </>

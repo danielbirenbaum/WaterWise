@@ -21,12 +21,12 @@ const Tab = createBottomTabNavigator()
 
 
 export default function App() {
-  var isSignedIn = false;
+  var isSignedIn = true;
 
 
   return (
     <NavigationContainer>
-      {isSignedIn ? 
+      {!isSignedIn ? 
 
         <Authentication></Authentication>
       : 

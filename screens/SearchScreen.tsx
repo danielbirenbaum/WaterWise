@@ -23,8 +23,8 @@ function SearchScreen() {
   return (
     <View style={styles.main}>
       <View style={{flex: 1}}>
-        <Card source={ocean}  label={'How to protect ou oceans'}></Card>
-        <Card source = {seaweed} label={"Learn more about engaged species"}></Card>
+        <Card source={ocean}  label={'How to protect our oceans'}></Card>
+        <Card source = {seaweed} label={"Learn more about endangered species"}></Card>
       </View>
         
         
@@ -34,19 +34,19 @@ function SearchScreen() {
           <View style={styles.faqItem}> 
             <View style={{flexDirection:'column' , marginStart:20}}>
               <Text style={{fontSize: 24 , fontWeight: 'bold',}}>What do "WQ" and "EE" means? </Text>
-              <Text style={{fontSize: 16  , marginBottom:10}}>WQ means 'Water Quality" , while EE means ...</Text>
+              <Text style={{fontSize: 16  , marginBottom:10}}>WQ means 'Water Quality', while EE means ...</Text>
             </View>
-            <View style={{ marginStart:15}}>
-              <FontAwesomeIcon icon={faArrowRight} style={{marginTop: 17}}/>
+            <View style={{ marginStart:5}}>
+              <FontAwesomeIcon icon={faArrowRight} style={{marginTop: 25}}/>
             </View>
           </View>
           <View style={{flex: 1 , flexDirection: 'row', marginTop:20 , borderStartColor:Colors.bege ,borderEndColor:Colors.bege, borderWidth:1,}}> 
             <View style={{flexDirection:'column' }}>
               <Text style={{fontSize: 25, marginStart:20  , fontWeight: 'bold',}}>What do "DO" means? </Text>
-              <Text style={{fontSize: 18,  marginStart:20 }}>Dissolved oxygen (DO) is a measure of how...</Text>
+              <Text style={{fontSize: 18,  marginStart:20  , marginBottom:10}}>Dissolved oxygen (DO) is a measure of how...</Text>
             </View>
             <View style={{width:'20%'}}>
-              <FontAwesomeIcon icon={faArrowRight} style={{marginTop: 20}}/>
+              <FontAwesomeIcon icon={faArrowRight} style={{marginTop: 25}}/>
             </View>
           </View>
         </ScrollView>

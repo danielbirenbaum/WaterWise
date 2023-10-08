@@ -43,7 +43,7 @@ export const NavBarScreen = () => {
             <>
             <View style={{flexDirection: 'row', padding: 10, justifyContent: 'center'}}>
               <FontAwesomeIcon icon={faPlus} color='#253F76' size={35}/>
-              <Text style={{ marginLeft: 20, fontSize: 25, textAlign: 'center'}}>Location</Text>
+              <Text style={{ marginLeft: 20, fontSize: 25, textAlign: 'center'}}>Add location</Text>
             </View>
             </>
           ),
@@ -56,7 +56,7 @@ export const NavBarScreen = () => {
           headerTitle: () => (
             <>
             <View style={{flexDirection: 'row', padding: 10, justifyContent: 'center'}}>
-              <FontAwesomeIcon icon={faQuestion} color='#253F76' size={35}/>
+              <FontAwesomeIcon icon={faQuestion} color='#FAEBD7' size={35}/>
             </View>
             </>
           ),
@@ -69,7 +69,7 @@ export const NavBarScreen = () => {
           headerTitle: () => (
             <>
             <View style={{flexDirection: 'row', padding: 10, justifyContent: 'center'}}>
-              <Text style={{ marginLeft: 20, fontSize: 25, textAlign: 'center'}}>Your Account</Text>
+              <Text style={{ marginLeft: 20, fontSize: 25, textAlign: 'center', color: '#FAEBD7'}}>Your Account</Text>
             </View>
             </>
           ),
