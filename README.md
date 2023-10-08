@@ -1,6 +1,6 @@
 # Water Wise
 
-### Member of Vaquitas Vigilantes: 
+### Member of Vaquitas Guardians: 
 * Carlos Frederico
 * João Vitor
 * Isabella 

@@ -65,11 +65,18 @@ export const NavBarScreen = () => {
           ),
         }}/>
         <Tab.Screen name="AccountScreen" component={AccountScreen} options={{
+          headerStyle: {backgroundColor: '#FAEBD7'},
+          headerTitle: () => (
+            <>
+            <View style={{flexDirection: 'row', padding: 10, justifyContent: 'center'}}>
+              <Text style={{ marginLeft: 20, fontSize: 25, textAlign: 'center'}}>Your Account</Text>
+            </View>
+            </>
+          ),
           tabBarIcon: () => (
             <FontAwesomeIcon icon={faCircleUser} color='#FAEBD7'/>
           ),
         }}/>
-        
         
       </Tab.Navigator>
   )

@@ -34,7 +34,7 @@ function SearchScreen() {
           <View style={styles.faqItem}> 
             <View style={{flexDirection:'column' , marginStart:20}}>
               <Text style={{fontSize: 24 , fontWeight: 'bold',}}>What do "WQ" and "EE" means? </Text>
-              <Text style={{fontSize: 16}}>WQ means 'Water Quality" , while EE means ...</Text>
+              <Text style={{fontSize: 16  , marginBottom:10}}>WQ means 'Water Quality" , while EE means ...</Text>
             </View>
             <View style={{ marginStart:15}}>
               <FontAwesomeIcon icon={faArrowRight} style={{marginTop: 17}}/>
