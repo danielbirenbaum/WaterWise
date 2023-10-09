@@ -3,7 +3,7 @@
 ### Members of Vaquitas Guardians: 
 * Carlos Frederico
 * João Vitor
-* Isabela 
+* Isabela Silva
 * Daniel Castro
 
 ### The project idea:
