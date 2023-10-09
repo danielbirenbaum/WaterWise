@@ -14,3 +14,11 @@
 
 ### Figma prototype:
 * [`Figma.zip`](https://github.com/danielbirenbaum/WaterWise/blob/main/Figma.zip)
+
+
+### Project instructions:
+* Transforming The React Native in a apk module is able while using [Expo documentation](https://expo.dev/) with the methods showed in [React Native to APK](https://www.youtube.com/watch?v=3j9DcRCxrFg)
+* Otherwise , it is able to see the supposed functions of the app in the video , that is inside the 'Demovideo' folder
+
+
+
