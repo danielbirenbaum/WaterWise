@@ -21,11 +21,7 @@
 * Otherwise , it is able to see the supposed functions of the app in the video , that is inside the 'Demovideo' folder
 
 
-
-
-
-
-
+# The demonstration video of the app:
 
 https://github.com/danielbirenbaum/WaterWise/assets/102628083/573cf3d6-f1e1-4e37-add2-4eef72ebe3f3
 
