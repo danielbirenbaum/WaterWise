@@ -2,7 +2,7 @@
 
 ### Members of Vaquitas Guardians: 
 * Carlos Frederico
-* João Vitor
+* João Vitor Nascimento
 * Isabela Silva
 * Daniel Castro
 
